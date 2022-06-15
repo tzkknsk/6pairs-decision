@@ -1,4 +1,4 @@
 streamlit
 Image
-Random
+random
 pandas
