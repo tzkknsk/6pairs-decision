@@ -57,6 +57,6 @@ csv = convert_df(df)
 st.download_button(
      label="結果を出力(csv)",
      data=csv,
-     file_name= f'UnitLottery_ColorDecision.csv',
+     file_name= f'Question1-1.csv',
      mime='text/csv',
  )
