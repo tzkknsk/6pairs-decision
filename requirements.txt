@@ -1,4 +1,2 @@
 streamlit
 Image
-random
-pandas
