@@ -54,6 +54,8 @@ def convert_df(df):
      # IMPORTANT: Cache the conversion to prevent computation on every rerun
      return df.to_csv(index=True).encode('utf-8')
 
+df = df.rename(columns={0: 'beta', 1: 'gamma', 2: 'color', })
+
 csv = convert_df(df)
 
 st.download_button(
