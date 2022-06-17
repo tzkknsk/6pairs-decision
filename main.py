@@ -48,11 +48,11 @@ output_dict={}
 for k,v in dic.items():   # 一度pd.Seriesに変換
     output_dict[k]=pd.Series(v)
 
-df = pd.DataFrame(output_dict)
+df = pd.DataFrame(output_dict).T
 
 def convert_df(df):
      # IMPORTANT: Cache the conversion to prevent computation on every rerun
-     return df.to_csv(index=False).encode('utf-8')
+     return df.to_csv(index=True).encode('utf-8')
 
 csv = convert_df(df)
 
