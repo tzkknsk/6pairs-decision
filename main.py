@@ -33,6 +33,8 @@ if buttom:
 
         st.subheader(f"サイコロ β : {dice_b}")
         st.subheader(f"サイコロ γ : {dice_g} ({dice_g_color_ls[0]})")
+        
+        dic[i] = [dice_b, dice_g, dice_g_color_ls[1]
 
 st.subheader("")
 
